@@ -4,6 +4,7 @@ import BookCallButton from "@/components/button/bookCall";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import { images } from "@/constants/images";
+import Marquee from "../ui/marquee";
 
 const heroSectionData = {
   badgeText: "New Feature Dropped!!",
@@ -73,9 +74,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center max-w-4xl mx-auto font-neuepower-ultra leading-[32px] md:leading-[59px]"
-          >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center max-w-4xl mx-auto font-neuepower-ultra leading-[32px] md:leading-[59px]">
             <span style={{ color: colors.charcoalBlue }}>
               {heroSectionData.titleHighlight}
             </span>
@@ -112,6 +111,10 @@ const HeroSection = () => {
           className="w-full h-auto"
           priority
         />
+      </div>
+
+      <div className="mb-10">
+        <Marquee />
       </div>
     </div>
   );

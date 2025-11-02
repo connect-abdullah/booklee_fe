@@ -16,7 +16,7 @@ interface MarqueeProps {
 
 const colors = {
   white: "#FFFFFF",
-  darkSlateGray: "#2F4F4F"
+  darkSlateGray: "#2F4F4F",
 };
 
 // Increased width and height for all company logos
@@ -96,7 +96,7 @@ const Marquee: React.FC<MarqueeProps> = ({
                   height: `100px`,
                 }}
               >
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.alt || `Company Logo ${idx + 1}`}
                   className="max-w-full max-h-full object-contain select-none"
@@ -106,18 +106,18 @@ const Marquee: React.FC<MarqueeProps> = ({
             ))}
           </div>
           {/* Gradient overlays for fade effect */}
-          <div 
+          <div
             className="absolute top-0 left-0 h-full pointer-events-none z-10"
             style={{
               width: "160px",
-              background: "linear-gradient(to right, white, transparent)"
+              background: "linear-gradient(to right, white, transparent)",
             }}
           />
-          <div 
+          <div
             className="absolute top-0 right-0 h-full pointer-events-none z-10"
             style={{
               width: "160px",
-              background: "linear-gradient(to left, white, transparent)"
+              background: "linear-gradient(to left, white, transparent)",
             }}
           />
         </div>
@@ -129,7 +129,9 @@ const Marquee: React.FC<MarqueeProps> = ({
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-200px * ${logos.length} - ${gap}px * ${logos.length}));
+            transform: translateX(
+              calc(-200px * ${logos.length} - ${gap}px * ${logos.length})
+            );
           }
         }
       `}</style>
