@@ -15,6 +15,7 @@ export const colors = {
   softSilver: "#ADADAD", // Navbar text-color
   lightGray: "#D6D7DA", // border color
   veryLightGray: "#E9EAEB", // very light gray, for subtle backgrounds | border colors
+  F5White: "#F5F5F5",
   gradientColorRight:
     "linear-gradient(to right, #8426E2, #771FE1, #6A16E1, #5D0DE1, #5004E1)", // Gradient color for some sections
   gradientColorLeft:

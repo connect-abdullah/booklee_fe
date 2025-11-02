@@ -114,6 +114,10 @@ const config = {
     "hover:border-[#E9EAEB]",
     "hover:bg-gradient-primary-right",
     "hover:bg-gradient-primary-left",
+    "bg-[#F5F5F5]",
+    "hover:bg-[#F5F5F5]",
+    "border-[#F5F5F5]",
+    "hover:border-[#F5F5F5]",
 
     // Patterns for dynamic color usage
     {
