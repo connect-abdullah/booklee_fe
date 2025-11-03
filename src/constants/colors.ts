@@ -21,6 +21,7 @@ export const colors = {
   veryLightPurple: "#F4ECFF",
   deepPurple: "#5D38C3",
   darkSlateGray: "#535862",
+  ultraLightGray: "#FAFAFA",
   gradientColorRight:
     "linear-gradient(to right, #8426E2, #771FE1, #6A16E1, #5D0DE1, #5004E1)", // Gradient color for some sections
   gradientColorLeft:

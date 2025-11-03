@@ -143,6 +143,16 @@ const config = {
     "border-[#D6D6D6]",
     "hover:border-[#D6D6D6]",
     "text-[#B7B7B7]",
+    "bg-[#FAFAFA]",
+    "hover:bg-[#FAFAFA]",
+    "border-[#FAFAFA]",
+    "hover:border-[#FAFAFA]",
+    "text-[#FAFAFA]",
+    "hover:text-[#FAFAFA]",
+    "bg-[#FAFAFA]",
+    "hover:bg-[#FAFAFA]",
+    "border-[#FAFAFA]",
+    "hover:border-[#FAFAFA]",
     // Patterns for dynamic color usage
     {
       pattern: /^(text|bg|border)-\[\#[0-9A-Fa-f]{6}\]$/,

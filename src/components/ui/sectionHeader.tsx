@@ -1,6 +1,6 @@
 "use client";
-import { colors } from "@/constants/colors";
 import { cn } from "@/lib/utils";
+import { colors } from "@/constants/colors";
 
 interface SectionHeaderProps {
   smallHeading?: string;
@@ -55,9 +55,8 @@ const SectionHeader = ({
     >
       {smallHeading && (
         <h2
-          className="text-sm md:text-base font-medium mb-4 uppercase tracking-wide"
+          className={`text-[11px] md:text-[11px] font-medium mb-4 uppercase tracking-wide text-[${colors.ashGray}]`}
           style={{
-            color: colors.D6Gray,
             letterSpacing: "0.1em",
           }}
         >
@@ -67,19 +66,15 @@ const SectionHeader = ({
       {mainHeading && (
         <h1
           className={cn(
-            "text-3xl md:text-4xl lg:text-5xl font-bold mb-4 max-w-4xl mx-auto",
+            `text-3xl md:text-4xl lg:text-5xl font-bold mb-4 max-w-4xl mx-auto font-neuepower-ultra text-[${colors.ashGray}]`,
             headingClass
           )}
-          style={{ color: colors.darkGray }}
         >
           {mainHeading}
         </h1>
       )}
       {description && (
-        <p
-          className="text-sm md:text-base max-w-4xl mx-auto leading-[24px]"
-          style={{ color: colors.slateGray }}
-        >
+        <p className="text-sm md:text-base font-medium max-w-4xl mx-auto leading-[24px] text-[#555E67]">
           {description}
         </p>
       )}

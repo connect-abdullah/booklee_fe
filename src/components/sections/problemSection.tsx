@@ -64,33 +64,34 @@ const ProblemSection = () => {
   ];
 
   return (
-    <div className="bg-white py-16 md:py-24 w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          smallHeading="PROBLEM"
-          mainHeading="Tired of Replying to Customer Messages"
-          description="Running your business on social media is overwhelming. Customers keep messaging and you can't reply to all of them instantly resulting in lost sales which leads to overworking and constant stress. We don't want that for you."
-          marginBottom={48}
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+    <div className="bg-white py-16  w-full">
+      <div className="max-w-7xl mx-auto px-2">
+        <div>
+          <SectionHeader
+            smallHeading="PROBLEM"
+            mainHeading="Tired of Replying to Customer Messages"
+            description="Running your business on social media is overwhelming. Customers keep messaging and you can't reply to all of them instantly resulting in lost sales which leads to overworking and constant stress. We don't want that for you."
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-6 md:p-8 border rounded-lg"
+              className="flex flex-col items-start text-left p-5 md:p-5 border border-dashed rounded-lg"
               style={{
-                borderColor: colors.veryLightGray,
+                borderColor: colors.lightGray,
                 borderWidth: "1px",
+                backgroundColor: colors.ultraLightGray,
               }}
             >
               <div
-                className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center mb-4 md:mb-6"
-                style={{ backgroundColor: colors.darkGray }}
+                className="w-9 h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center mb-4 md:mb-6"
+                style={{ backgroundColor: colors.black }}
               >
                 {problem.icon}
               </div>
               <h3
-                className="text-base md:text-lg font-bold leading-tight"
+                className="text-base md:text-lg font-extrabold leading-tight"
                 style={{ color: colors.darkGray }}
               >
                 {problem.title}
