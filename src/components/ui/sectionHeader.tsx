@@ -69,9 +69,12 @@ const SectionHeader = ({
       {mainHeading && (
         <h1
           className={cn(
-            `text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 ${maxWidth} mx-auto font-neuepower-ultra text-[${mainHeadingColor ? mainHeadingColor : colors.charcoalBlue}]`,
+            `text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 ${maxWidth} mx-auto font-neuepower-ultra`,
             headingClass
           )}
+          style={{
+            color: mainHeadingColor ? mainHeadingColor : colors.charcoalBlue,
+          }}
         >
           {mainHeading}
         </h1>
