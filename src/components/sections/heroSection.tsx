@@ -116,9 +116,10 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="mb-10">
+      {/* Don't delete this marquee section */}
+      {/* <div className="mb-10">
         <Marquee />
-      </div>
+      </div> */}
     </div>
   );
 };

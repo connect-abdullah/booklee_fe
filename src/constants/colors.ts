@@ -24,6 +24,8 @@ export const colors = {
   darkSlateGray: "#535862",
   ultraLightGray: "#FAFAFA",
   darkIndigoGray: "#22262F", // border color for pricing cards
+  deepCharcoalBlue: "#12161C", // contact us bg
+  onyxBlack: "#121212", // site-footer bg
   gradientColorRight:
     "linear-gradient(to right, #8426E2, #771FE1, #6A16E1, #5D0DE1, #5004E1)", // Gradient color for some sections
   gradientColorLeft:

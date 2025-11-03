@@ -9,6 +9,7 @@ import logo from "@public/logo.png";
 import TeamsLogo from "@public/myTeamLogos.png";
 import paymentMethods from "@public/paymentMethods.png";
 import dottedBackground from "@public/dotBg.png";
+import whiteLogo from "@public/logoWhite.png";
 
 export const images = {
   heroSectionImage: heroImage,
@@ -22,4 +23,5 @@ export const images = {
   TeamsLogo,
   paymentMethods,
   dottedBackground,
+  whiteLogo,
 };
