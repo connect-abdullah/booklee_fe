@@ -7,7 +7,7 @@ const FeedbackSection = () => {
   const [highlightedChars, setHighlightedChars] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  const text = `“Since using LazyChat, we haven't missed an order—messages are answered instantly, our sales are up 30%”`;
+  const text = `“Since using Booklee, we haven't  missed an appointment — inquiries are answered instantly, our bookings are up 30%”`;
 
   // Check if mobile on mount and resize
   useEffect(() => {
@@ -142,13 +142,13 @@ const FeedbackSection = () => {
             className="text-lg md:text-xl lg:text-xl font-semibold mb-2"
             style={{ color: colors.slateGray }}
           >
-            Rakib islam
+            Muhammad Husnain 
           </p>
           <p
             className="text-md font-medium"
             style={{ color: colors.darkSlateGray }}
           >
-            Co-Founder, Fragrancia
+            Founder, Al-Mudeef
           </p>
         </div>
       </div>

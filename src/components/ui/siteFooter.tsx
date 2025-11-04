@@ -35,7 +35,7 @@ const SiteFooter = () => {
         className={`w-full max-w-5xl mx-auto uppercase flex flex-col md:flex-row items-center md:justify-between gap-4 px-4 text-[10px] font-medium text-[${colors.silverGray}]  py-4`}
       >
         <div className="text-center md:text-left">
-          © lazychat 2025. All rights reserved.
+          © booklee 2025. All rights reserved.
         </div>
         <div className="order-first md:order-0">
           <Image

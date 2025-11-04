@@ -28,14 +28,14 @@ const featureSectionData = [
   {
     title: "Superpower your support team",
     description:
-      "LazyChat suggests smart replies in real time and tracks agent performance—so your humans get sharper with every message.",
+      "Booklee suggests smart replies in real time and tracks agent performance—so your humans get sharper with every message.",
     buttonText: "Get Started",
     videoSrc: "/videos/feature4.mp4",
   },
   {
     title: "Stop repeating while Start resolving",
     description:
-      'From "Where\'s my order?" to "How to return?"— LazyChat answers instantly and flags issues for humans only when needed.',
+      'From "How to cancel?" to "How to reschedule?"— Booklee answers instantly and resolve issues automatically.',
     buttonText: "Get Started",
     videoSrc: "/videos/feature5.mp4",
   },

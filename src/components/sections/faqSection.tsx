@@ -28,7 +28,7 @@ const faqs: Faq[] = [
       "Yes, our Android and iOS apps provide realtime notifications and a streamlined inbox experience on the go.",
   },
   {
-    question: "How do I connect my product inventory to LazyChat?",
+    question: "How do I connect my product inventory to Booklee?",
     answer:
       "Use the integrations page to connect your ecommerce store. We support Shopify, WooCommerce, and custom catalogs via API.",
   },
@@ -38,6 +38,7 @@ const faqs: Faq[] = [
       "All data is encrypted in transit and at rest. We follow industry best practices and undergo regular security reviews.",
   },
 ];
+
 
 const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState<number>();

@@ -26,7 +26,7 @@ const BookCallButton: React.FC<BookCallButtonProps> = ({
 }) => {
   return (
     <button
-      onClick={onClick}
+      onClick={() => window.open('https://cal.com/uzair-anjum-cfkozo/30min', '_blank')}
       className={`${bgColor} ${textColor} ${px} ${textSize} ${py} rounded-lg ${fontWeight} cursor-pointer shadow ease-in-out transition-all duration-200 ${className}`}
       onMouseEnter={(e) => {
         e.currentTarget.style.background = colors.gradientColorLeft;

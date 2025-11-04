@@ -11,7 +11,7 @@ const CtaCard = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
         <SectionHeader
           mainHeading="Discover why customers are loving us!"
-          description="Join LazyChat and Grow Your Business"
+          description="Join Booklee and Grow Your Business"
           mainHeadingColor={colors.white}
           descriptionColor={colors.white}
           marginBottom={12}

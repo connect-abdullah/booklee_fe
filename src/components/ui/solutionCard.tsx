@@ -5,9 +5,9 @@ const SolutionCard = () => {
   return (
     <div className={`py-10 md:px-7 md:py-22 bg-[${colors.ultraLightGray}]`}>
       <SectionHeader
-        smallHeading="SOLUTION LAZYCHAT OFFERS"
-        mainHeading="LazyChat replies to all of your customers so that you can focus on growth"
-        description="LazyChat is like your superhuman customer support agent that replies to all your customers, takes orders and handles issues automatically."
+        smallHeading="SOLUTION BOOKLEE OFFERS"
+        mainHeading="Booklee replies to all of your customers so that you can focus on growth"
+        description="Booklee is like your superhuman customer support agent that replies to all your customers, takes orders and handles issues automatically."
         maxWidth="max-w-5xl"
         marginBottom={12}
       />
