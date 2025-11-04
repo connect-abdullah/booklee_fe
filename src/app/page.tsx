@@ -6,6 +6,7 @@ import SolutionSection from "@/components/sections/solutionSection";
 import CtaSection from "@/components/sections/ctaSection";
 import Footer from "@/components/sections/footer";
 import FeatureSection from "@/components/sections/featureSection";
+import MoreFeaturesSection from "@/components/sections/moreFeaturesSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ProblemSection />
       <SolutionSection />
       <FeatureSection />
+      <MoreFeaturesSection />
       <CtaSection />
       <Footer />
     </div>
