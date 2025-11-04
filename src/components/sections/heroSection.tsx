@@ -12,7 +12,7 @@ const heroSectionData = {
   titleHighlight: "Booklee is an AI-powered business automation platform built for ",
   titleHighlight2: "service-based business.",
   description:
-    "Your 24/7 virtual receptionist and customer engagement engine—handling inquiries, scheduling, reminders, and follow-ups across Omni Channel, SMS, Email, and Call.",
+    "Your 24/7 sales and customer support engine—handling inquiries, scheduling, reminders, and follow-ups across Omni Channel, SMS, Email, and Call.",
   buttonText: "Book a demo",
 };
 
