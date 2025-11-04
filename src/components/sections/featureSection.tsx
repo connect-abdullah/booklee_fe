@@ -43,6 +43,7 @@ const featureSectionData = [
 
 const FeatureSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -55,6 +56,26 @@ const FeatureSection = () => {
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
+  // Control video playback when currentIndex changes (desktop only)
+  useEffect(() => {
+    if (isMobile) return;
+
+    videoRefs.current.forEach((video, idx) => {
+      if (video) {
+        if (idx === currentIndex) {
+          // Play the active video
+          video.play().catch((err) => {
+            console.error("Error playing video:", err);
+          });
+        } else {
+          // Pause and reset inactive videos
+          video.pause();
+          video.currentTime = 0;
+        }
+      }
+    });
+  }, [currentIndex, isMobile]);
 
   useEffect(() => {
     // Don't run slider animation on mobile/tablet
@@ -260,14 +281,24 @@ const FeatureSection = () => {
                       </div>
                       <div className="flex items-center justify-center">
                         <video
+                          ref={(el) => {
+                            videoRefs.current[idx] = el;
+                          }}
                           src={feature.videoSrc}
                           width={350}
                           height={350}
                           loop
                           playsInline
-                          autoPlay={isActive}
                           muted
                           className="rounded-3xl"
+                          onLoadedData={() => {
+                            // Play video if it's the active one when it loads
+                            if (idx === currentIndex && videoRefs.current[idx]) {
+                              videoRefs.current[idx]?.play().catch((err) => {
+                                console.error("Error playing video:", err);
+                              });
+                            }
+                          }}
                         >
                           Sorry, your browser doesn't support embedded videos.
                         </video>
