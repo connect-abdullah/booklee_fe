@@ -9,8 +9,8 @@ import Marquee from "../ui/marquee";
 const heroSectionData = {
   badgeText: "New Feature Dropped!!",
   badgeDescription: "Booklee can now understand all your business too!",
-  titleHighlight:"Booklee AI automates how service businesses  ",
-  titleHighlight2: "Communicate, Convert, and Grow.",
+  titleHighlight:"Your Intelligent Sales Representative Who Works 24/7 to ",
+  titleHighlight2: "keep your business growing.",
   description:
     "From lead capture to confirmed booking, it manages conversations across every channel—day or night.",
   buttonText: "Book a demo",
